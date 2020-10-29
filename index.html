@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="gallery_grid">
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/3156381/pexels-photo-3156381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/2724670/pexels-photo-2724670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/2898221/pexels-photo-2898221.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" class="grid_item" style="background-image: url('https://images.pexels.com/photos/3156381/pexels-photo-3156381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" onclick="openFlybox('https:\/\/images.pexels.com/photos/2724670/pexels-photo-2724670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000')" class="grid_item" style="background-image: url('https://images.pexels.com/photos/2724670/pexels-photo-2724670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="#" onclick="openFlybox('https:\/\/images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000');" class="grid_item" style="background-image: url('https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                <span class="grid_item_overlay">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+
+        <div id="flybox" class="flybox" onclick="closeFlybox();">
+            <img id="flyboxImage" src="https://images.pexels.com/photos/2736136/pexels-photo-2736136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+
+        <script>
+            var flyboxElement = document.getElementById('flybox');
+            var flyboxImageElement = document.getElementById('flyboxImage');
+            function openFlybox(imageUrl) {
+                flyboxElement.style.display = 'flex';
+                flyboxImageElement.src = imageUrl;
+            }
+            function closeFlybox() {
+                flyboxElement.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
